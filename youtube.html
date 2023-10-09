@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>YouTube-Clone</title>
+        <link rel="icon" href="header-icons/youtube-icon.png" type="image/x-icon">
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+       <link rel="stylesheet" href="styles/video.css">
+       <link rel="stylesheet" href="styles/header.css"> 
+       <link rel="stylesheet" href="styles/general.css"> 
+       <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+
+    <body>
+<!-- header Div -->
+    <header class="header">
+        <div class="left-section">
+            <button class="menu-button">
+                <img class="hamburger-menu" src="header-icons/hamburger-menu.svg">
+            </button>
+            <img class="youtube-logo" src="header-icons/youtube-logo.svg" >
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+
+            <button class="search-button">
+                 <img class="search-icon"
+                 src="header-icons/search.svg">
+                 <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class = "voice-search-icon" src="header-icons/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="header-icons/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="youtube-apps-container">
+                <img class="youtube-apps-icon" src="header-icons/youtube-apps.svg">
+                <div class="tooltip">YouTube apps</div>
+            </div>
+            
+        <!-- div for notification number -->
+            <div class="notifications-icon-container">
+                <button class="notification-button">
+                    <img class="notifications-icon" src="header-icons/notifications.svg">
+            </button>
+                <div class="notification-count">6</div>
+                <div class="tooltip">Notifications</div>
+            </div>
+            <img class="current-user-picture" src="header-icons/channels4_profile.jpg">
+        </div>
+
+    </header>
+<!-- side bar -->
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="sidebar-icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar-icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar-icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar-icons/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar-icons/youtube-music.svg">
+            <div>Youtube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar-icons/library.svg">
+            <div>Library</div>
+        </div>
+    </nav>
+        
+<!-- a container for all the videos...called MAIN in semantic elements-->
+    <main>
+        <!-- 1st video -->
+        <section class="videos-grid">
+            <div class="video-preview">
+                <!-- vertical layout 2 divs -->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=cHlkOahWs50&t=6s" target="_blank">
+                        <img class="thumbnail" src="images/kayn1v9.jpg">
+                    </a>
+                    <div class="video-timer">23:35</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal layout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@Karasmaishorts" target="_blank">
+                            <img class="profile-picture" src="images/karasmai-kayn.jpg">
+                        </a>
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=cHlkOahWs50&t=6s" target="_blank">Riot Will Have To Revert These Items Kayn Can’t Lose… - League of Legends
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@Karasmaishorts" target="_blank">Karasmai Kayn</a>
+                        </p>
+                        <p class="video-stats">
+                            838 views &#183; 3 hours ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+    <!-- 2nd video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=7qRfCxRHIBc&t=3s" target="_blank">
+                        <img class="thumbnail" src="images/hyperbloom.webp">
+                    </a>
+                    <div class="video-timer">1:09</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@WallensteinsCh" target="_blank">
+                            <img class="profile-picture" src="images/wallenstein.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=7qRfCxRHIBc&t=3s" target="_blank">
+                                IT IS WHAT IT IS... | AYATO SHINOBU HYPERBLOOM TEAM! | 12-1 
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@WallensteinsCh" target="_blank">
+                                Wallensteins Ch. &#10004;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            139k views &#183; 3 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    <!-- 3rd video -->
+            <div class="video-preview">
+                <!-- vertical layout 2 divs -->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=-QxI-RP6-HM&t=4s" target="_blank">
+                        <img class="thumbnail" src="images/advice-cpp.webp"> 
+                    </a>
+                    <div class="video-timer">3:18</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal layout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@Honeypotio" target="_blank">
+                            <img class="profile-picture" src="images/honeypot.jpg">
+                        </a>
+                        
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=-QxI-RP6-HM&t=4s" target="_blank">
+                                (Life) Advice From The Creator of C++
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@Honeypotio" target="_blank">
+                            Honeypot
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            243k views &#183; 10 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- 4th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=ZrO_qsIJw6o" target="_blank">
+                    <img class="thumbnail" src="images/bead-paradise.webp">
+                    </a>
+                    <div class="video-timer">3:04</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@DailyDoseOfInternet" target="_blank">
+                            <img class="profile-picture" src="images/dailydoseofinternet.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=ZrO_qsIJw6o" target="_blank">
+                                Walking Through Bread Paradise
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@DailyDoseOfInternet" target="_blank">
+                            Daily Dose Of Internet
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            7.8M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    <!-- 5th video -->
+            <div class="video-preview">
+                <!-- vertical layout 2 divs -->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=JpAXjoM_k9s" target="_blank">
+                    <img class="thumbnail" src="images/stay-noah.webp">
+                    </a>
+                    <div class="video-timer">2:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal layout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/channel/UC68MBQXEoPfzONTsf9jqcJQ" target="_blank">
+                        <img class="profile-picture" src="images/noah-raquel.jpg">
+                        </a>
+                        
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=JpAXjoM_k9s" target="_blank">
+                            Stay (Kid Laroi & Justin Bieber) Full Production Cover but recorded with a phone
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/channel/UC68MBQXEoPfzONTsf9jqcJQ" target="_blank">
+                            Noah Raquel &#9834;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            376k views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- 6th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=4vsHIEElUGo" target="_blank">
+                    <img class="thumbnail" src="images/viego-montage.webp">
+                    </a>
+                    <div class="video-timer">12:38</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@leagueoflegendstime" target="_blank">
+                        <img class="profile-picture" src="images/lol-time.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=4vsHIEElUGo" target="_blank">
+                            VIEGO MONTAGE 2023 - GOD PLAYS
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@leagueoflegendstime" target="_blank">
+                            LOL TIME
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            4.3k views &#183; 12 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- 7th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=2_pH_oO6WcY" target="_blank">
+                    <img class="thumbnail" src="images/a-cubic-equation.webp">
+                    </a>
+                    <div class="video-timer">8:16</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@SyberMath" target="_blank">
+                        <img class="profile-picture" src="images/SyberMath.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=2_pH_oO6WcY" target="_blank">
+                            A Cubic Equation | x^3-26x+5=0
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@SyberMath" target="_blank">
+                            SyberMath &#10004;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            33k views &#183; 8 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- 8th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=L2cbT3elGl8" target="_blank">
+                    <img class="thumbnail" src="images/hikaru-vs-magnus.webp">
+                    </a>
+                    <div class="video-timer">7:50</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@ChessBaseIndiachannel" target="_blank">
+                        <img class="profile-picture" src="images/chessbaseindia.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=L2cbT3elGl8" target="_blank">
+                            When arch rivals meet- Magnus Carlsen vs Hikaru Nakamura
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@ChessBaseIndiachannel" target="_blank">
+                            ChessBase India &#10004;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            16M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    <!-- 9th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=Xe6-2yJJkk0" target="_blank">
+                    <img class="thumbnail" src="images/weeknd.webp">
+                    </a>
+                    <div class="video-timer">4:04</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" target="_blank">
+                        <img class="profile-picture" src="images/weeknd_pfp.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=Xe6-2yJJkk0" target="_blank">
+                                The Weeknd - In Your Eyes (iHeartRadio Jingle Ball Live Performance)
+                                </a>
+                            </p>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" target="_blank">
+                            The Weeknd &#9834;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            21M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    <!-- 10th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=kX3nB4PpJko" target="_blank">
+                    <img class="thumbnail" src="images/MrBeast-jet.webp">
+                    </a>
+                    <div class="video-timer">15:37</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@MrBeast" target="_blank">
+                        <img class="profile-picture" src="images/MrBeast-pfp.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=kX3nB4PpJko" target="_blank">
+                                Last To Take Hand Off Jet, Keeps It!
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@MrBeast" target="_blank">
+                            MrBeast &#10004;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            136M views &#183; 9 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    <!-- 11th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=_zU6-BJH50E" target="_blank">
+                        <img class="thumbnail" src="images/quirkology-balancing.webp">
+                    </a>
+                    <div class="video-timer">1:15</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@Quirkology" target="_blank">
+                        <img class="profile-picture" src="images/quirkology-pfp.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=_zU6-BJH50E" target="_blank">
+                                Balancing
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@Quirkology" target="_blank">
+                            Quirkology &#10004;
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            534k views &#183; 7 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    <!-- 12th video -->
+            <div class="video-preview">
+                <!-- vertical layout, 2 divs-->
+                <div class="thumbnail-row">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=S27qCoec7Ec&t=2s" target="_blank">
+                        <img class="thumbnail" src="images/How-About-universe.webp">
+                    </a>
+                    <div class="video-timer">8:57</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- horizontal laytout 2 divs -->
+                    <div class="channel-picture">
+                        <a class="channel-link" href="https://www.youtube.com/@How-About" target="_blank">
+                        <img class="profile-picture" src="images/How-About-pfp.jpg">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=S27qCoec7Ec&t=2s" target="_blank">
+                                How About Andromeda and Milky Way Collision?
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@How-About" target="_blank">
+                            How About
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            2.9k views &#183; 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    </body>
+
+</html>

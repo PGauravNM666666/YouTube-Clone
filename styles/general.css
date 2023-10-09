@@ -1,0 +1,24 @@
+/* 
+body
+{
+    background-color: rgba(0, 0, 0, 0.893);
+    color: white;
+} 
+*/
+body
+{
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 95px;
+    padding-right: 24px;
+    padding-bottom: 200px;
+    /*padding-bottom: 40px; gave equal to row gap*/
+    background-color: rgb(248,248,248);
+}
+p
+{
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
